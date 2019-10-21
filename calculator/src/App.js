@@ -7,6 +7,8 @@ import ClearPad from './components/ClearPad';
 import OpPad from './components/OpPad';
 import Display from './components/Display';
 
+import VersionDisp from './components/VersionDisp';
+
 import saferEval from 'safer-eval';
 
 class App extends Component {
@@ -108,6 +110,8 @@ class App extends Component {
                     <Grid item xs={3}><ClearPad onClick={this.handleOnClearClick} /></Grid>
                     <Grid item xs={3}><OpPad letter='=' onClick={this.handleOpPadClick} disabled={calculated} /></Grid>
                     <Grid item xs={3}><OpPad letter='/' onClick={this.handleOpPadClick} disabled={calculated} /></Grid>
+
+                    <Grid item xs={3}><VersionDisp versionNo='0.0.1'></VersionDisp></Grid>
                 </Grid>
             </Container >
         );

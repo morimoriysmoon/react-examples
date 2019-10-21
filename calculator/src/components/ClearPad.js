@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
 
+import './Common.css'
+
 class ClearPad extends Component {
     constructor(props) {
         super(props);
@@ -22,7 +24,7 @@ class ClearPad extends Component {
                     fullWidth={true}
                     onClick={this.handleOnClick}
                 >
-                    <h1>CLR</h1>
+                    <span className='letter'>CLR</span>
                 </Button>
             </span>
         );

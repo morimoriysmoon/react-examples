@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
 
+import './Common.css'
+
 class OpPad extends Component {
     constructor(props) {
         super(props);
@@ -24,7 +26,7 @@ class OpPad extends Component {
                     onClick={this.handleOnClick}
                     disabled={disabled}
                 >
-                    <h1>{letter}</h1>
+                    <span className='letter'>{letter}</span>
                 </Button>
             </span>
         );
