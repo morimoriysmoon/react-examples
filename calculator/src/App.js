@@ -85,12 +85,11 @@ class App extends Component {
     render() {
         const { lettersEntered, numbersOps, calculated } = this.state;
         return (
-            <Container maxWidth="md">
+            <Container maxWidth="sm">
                 <Grid container alignContent="center" alignItems="center" spacing={3}>
                     <Grid item xs={12}>
                         <Display displayText={lettersEntered} history={numbersOps} />
                     </Grid>
-
                     <Grid item xs={3}><NumberPad letter='1' onClick={this.handleOnNumPadClick} disabled={calculated} /></Grid>
                     <Grid item xs={3}><NumberPad letter='2' onClick={this.handleOnNumPadClick} disabled={calculated} /></Grid>
                     <Grid item xs={3}><NumberPad letter='3' onClick={this.handleOnNumPadClick} disabled={calculated} /></Grid>

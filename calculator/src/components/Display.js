@@ -1,14 +1,26 @@
 import React, { Component, Fragment } from 'react';
 import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
+import KeyboardOutlinedIcon from '@material-ui/icons/KeyboardOutlined';
 
 const styles = theme => ({
     textfield: {
     },
-    textFieldInput: {
-        fontSize: '5rem',
+    textFieldInputResult: {
+        fontSize: '3rem',
         color: 'black',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        textAlign: 'right'
+    },
+    textFieldInputHistory: {
+        fontSize: '1rem',
+        textAlign: 'right'
+    },    
+    headerIcon: {
+        fontSize: '8rem',
+    },
+    headerTitle: {
+        fontSize: '2rem'
     }
 })
 
@@ -21,21 +33,29 @@ class Display extends Component {
 
         return (
             <Fragment>
+                <div>
+                    <KeyboardOutlinedIcon className={classes.headerIcon}></KeyboardOutlinedIcon>
+                </div>
                 <TextField className={classes.textfield}
                     variant="outlined"
                     value={displayText}
                     margin="normal"
                     InputProps={{
                         classes: {
-                            input: classes.textFieldInput
+                            input: classes.textFieldInputResult
                         }
                     }}
                     fullWidth={true} label="Result">
                 </TextField>
                 <TextField className={classes.textfield}
-                    variant="outlined"
+                    //variant="filled"
                     value={historyText}
                     margin="normal"
+                    InputProps={{
+                        classes: {
+                            input: classes.textFieldInputHistory
+                        }
+                    }}
                     fullWidth={true} label="History">
                 </TextField>
             </Fragment>
