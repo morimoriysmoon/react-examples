@@ -9,7 +9,6 @@ import Display from './components/Display';
 import VersionDisp from './components/VersionDisp';
 
 import saferEval from 'safer-eval';
-import { Divider } from '@material-ui/core';
 
 class App extends Component {
     constructor(props) {
