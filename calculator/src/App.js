@@ -6,10 +6,10 @@ import NumberPad from './components/NumberPad';
 import ClearPad from './components/ClearPad';
 import OpPad from './components/OpPad';
 import Display from './components/Display';
-
 import VersionDisp from './components/VersionDisp';
 
 import saferEval from 'safer-eval';
+import { Divider } from '@material-ui/core';
 
 class App extends Component {
     constructor(props) {
@@ -46,9 +46,9 @@ class App extends Component {
             case '/':
                 if (this.state.lettersEntered.length > 0) {
                     let newList = this.state.numbersOps.slice();
-                    let number = Number(this.state.lettersEntered);                    
+                    let number = Number(this.state.lettersEntered);
                     newList.push(number.toString());
-                    
+
                     if (newList.length !== 1) {
                         newList = ['(', ...newList, ')']; // wrap with ()
                     }
@@ -112,6 +112,7 @@ class App extends Component {
 
                     <Grid item xs={3}><VersionDisp versionNo='0.0.1'></VersionDisp></Grid>
                 </Grid>
+
             </Container >
         );
     }

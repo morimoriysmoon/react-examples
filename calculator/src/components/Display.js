@@ -3,7 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
 import KeyboardOutlinedIcon from '@material-ui/icons/KeyboardOutlined';
 
-const styles = theme => ({
+const styles = {
     textfield: {
     },
     textFieldInputResult: {
@@ -22,7 +22,7 @@ const styles = theme => ({
     headerTitle: {
         fontSize: '2rem'
     }
-})
+};
 
 class Display extends Component {
     render() {
