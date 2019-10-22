@@ -1,5 +1,5 @@
 ## Apperance
-![result](https://user-images.githubusercontent.com/1762090/67198332-7d646700-f44a-11e9-81bb-2c950d521762.png)
+![result](https://user-images.githubusercontent.com/1762090/67261520-bb19cc00-f4ec-11e9-8860-6530a66bc89f.png)
 
 ## Technologies in use
 
